@@ -1,8 +1,7 @@
 # Password Strength Checker Web Application
 
 ## 📌 Project Overview
-The Password Strength Checker is a web-based application that evaluates the strength of a user-entered password and provides feedback and suggestions to improve security. The project is developed as a **Micro Project for Software Engineering (MSBTE – K Scheme)**.
-
+The Password Strength Checker is a web-based application that evaluates the strength of a user-entered password and provides feedback and suggestions to improve security.
 The application helps users understand how strong or weak their passwords are and creates awareness about common password security practices.
 
 ---
