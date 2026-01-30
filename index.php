@@ -125,7 +125,7 @@ if (isset($_SESSION['password_result'])) {
 
                 <!-- RESULT -->
                 <div id="result-container" <?php if (!$isSubmitted) echo 'style="display:none;"'; ?>>
-                    <p class="info-text <?= $strengthClass ?>">
+                    <p class="info-text1 <?= $strengthClass ?>">
                         🔐 Password Strength: <b><?= $strengthText ?></b>
                     </p>
 

@@ -265,3 +265,8 @@ body {
         padding: 10px;
     }
 }
+
+.info-text1 {
+    font-size: 1.1rem; /* adjust as you like */
+    font-weight: 600;
+}
