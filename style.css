@@ -1,0 +1,267 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #fff;
+}
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.user-tag {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* CONTAINER */
+.container {
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HERO */
+.hero-section {
+    text-align: center;
+    margin: 35px 0 25px;
+}
+
+.hero-section h1 {
+    font-size: clamp(22px, 4vw, 28px);
+    margin-bottom: 8px;
+}
+
+.hero-section p {
+    max-width: 650px;
+    margin: auto;
+    font-size: 14px;
+    opacity: 0.95;
+}
+
+/* SECTION HEADER */
+.section-header {
+    margin: 28px 0 14px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+}
+
+/* SEARCH CARD */
+.search-card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(18px);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.search-card input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info-text {
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+
+
+/* PASSWORD STRENGTH TABLE */
+.strength-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.strength-table th {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.strength-table td {
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* Deep colors */
+.very-weak { background: rgba(255,0,0,0.35); }
+.weak { background: rgba(255,102,0,0.35); }
+.medium { background: rgba(255,204,0,0.35); }
+.strong { background: rgba(0,153,102,0.35); }
+.very-strong { background: rgba(0,102,204,0.35); }
+
+/* BEST PRACTICES GRID */
+.best-practices {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* PRACTICE CARD */
+.practice-card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(14px);
+    padding: 18px;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+ .practice-card:hover {
+        transform: translateY(-6px) translateX(3px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+/* Title + arrow */
+.practice-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+/* Arrow */
+.arrow {
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Hidden info */
+.practice-info {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.35s ease;
+}
+
+/* Wikipedia link */
+.practice-info a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #00b4d8;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Expanded card */
+.practice-card.active {
+    grid-column: span 2;
+    background: rgba(255,255,255,0.18);
+}
+
+.practice-card.active .practice-info {
+    opacity: 1;
+    max-height: 220px;
+}
+
+.practice-card.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* QA SECTION */
+.qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.qa-card {
+    background: rgba(255,255,255,0.12);
+    padding: 18px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.qa-card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+}
+
+.qa-card p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 40px;
+    padding: 18px;
+    background: rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.footer-logo {
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .best-practices {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 16px;
+    }
+
+    .best-practices {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-card.active {
+        grid-column: span 1;
+    }
+
+    .strength-table th,
+    .strength-table td {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
