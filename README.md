@@ -29,7 +29,7 @@ The application helps users understand how strong or weak their passwords are an
 ---
 
 ## 🌐 Live Project Link
-🔗 http://pass-strength.infinityfreeapp.com/index.php
+🔗 https://pass-strength.infinityfreeapp.com/index.php
 
 ---
 
